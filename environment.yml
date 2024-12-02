@@ -1,0 +1,34 @@
+name: traffic-exercise-dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.*
+# data
+  - numpy >=1.16
+  - pandas >=1
+  - xlrd >= 1.0.0
+  - pandas-profiling
+  - scikit-learn
+  - bulwark
+# plotting
+  - matplotlib >=3.1  # for basic plotting
+  - seaborn
+  - altair >=3  # for declarative plotting
+# notebooks
+  - jupyter  # for notebooks
+  - jupyterlab  # for notebooks IDE
+  - nodejs  # for jupyterlab build
+  - watermark  # for traceability in notebooks
+# utilities
+  - pytest >=4.4
+  - flake8
+  - black
+  - isort
+  - tqdm
+  - pytest
+  - invoke
+  - pip >=19
+  - pip:
+    - -e .  # project code
+    - mplleaflet  # for mapping
+    - convertbng
